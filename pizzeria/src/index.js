@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Carte from './components/carte';
-import Commande from './components/commande';
+import FormulaireCommande from './components/formulaireCommande';
+import VisualisationCommande from './components/visualisationCommande';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,7 +13,14 @@ ReactDOM.render(
 
 ReactDOM.render(
   <React.StrictMode>
-    <Commande />
+    <FormulaireCommande />
   </React.StrictMode>,
-  document.getElementById('commandeApp')
+  document.getElementById('formulaireCommandeApp')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+    <VisualisationCommande />
+  </React.StrictMode>,
+  document.getElementById('visualisationCommandeApp')
 );
